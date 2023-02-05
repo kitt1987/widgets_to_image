@@ -58,7 +58,7 @@ class MainPageState extends State<MainPage> {
         floatingActionButton: FloatingActionButton(
           child: const Icon(Icons.image_outlined),
           onPressed: () async {
-            final bytes = await controller.capture();
+            final bytes = await controller.capture(6);
             setState(() {
               this.bytes = bytes;
             });
